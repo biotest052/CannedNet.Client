@@ -58,9 +58,9 @@ public class Photon_AppSettings_Patch
         __result = new()
         {
             AppVersion = __result?.AppVersion,
-            AppIdRealtime = "c74d22b7-6665-41cf-9ce8-fc70b625caa6",
-            AppIdVoice = "f7adbf03-edae-4a7d-bb4b-9e06de75bd96",
-            AppIdChat = "4538ca46-903b-48d9-bf33-247ea468a29d",
+            AppIdRealtime = Plugin.AppIdRT.Value,
+            AppIdVoice = Plugin.AppIdVoice.Value,
+            AppIdChat = Plugin.AppIdChat.Value,
             FixedRegion = "us",
             UseNameServer = true,
             Protocol = ConnectionProtocol.Udp,
